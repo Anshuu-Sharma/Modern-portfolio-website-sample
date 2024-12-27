@@ -46,7 +46,7 @@ html, body{
 }
 #based{
     text-align: right;
-    font-size: medium;
+    font-size: 1vw;
 }
 #availability{
     text-align: right;
@@ -54,7 +54,31 @@ html, body{
     padding: 40px;
     padding-top: 120px;
     font-size: 16px;
+    position: relative;
 }
 p{
     font-weight: 900;
+}
+#heroFooter{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 40px ;
+    position: absolute;
+    bottom: 3%;
+}
+a{
+    text-decoration: none;
+}
+#upDown{
+    display: flex;
+    gap: .2rem;
+}
+.circle :first-child{
+    color: black;
+    background-color: #a3a3a3;
+    border-radius: 20px;
+    padding: 5px;
 }
