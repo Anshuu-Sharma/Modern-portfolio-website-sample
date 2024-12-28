@@ -9,6 +9,7 @@
 html, body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 #main{
     width: 100%;
@@ -81,4 +82,111 @@ a{
     background-color: #a3a3a3;
     border-radius: 20px;
     padding: 5px;
+}
+#second{
+    background-color: black;
+    width: 100%;
+    padding-top: 400px;
+    padding-right: 10vw;
+    padding-left: 2vw;
+}
+.elem{
+    width: 100%;
+    border-top: 1px solid #a3a3a3;
+    font-size: 3vw;
+    padding: 20px;
+    padding: 2vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.elem h1{
+    color: #a3a3a3;
+}
+.elem h5{
+    font-size: 15px;
+}
+.eleLast{
+    border-bottom: 1px solid #a3a3a3;
+}
+.workImg{
+    display: none;
+    position: absolute;
+    height: 350px;
+    z-index: 999;
+}
+.about{
+    width: 90%;
+    padding: 350px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    gap: 5rem;
+}
+.aboutImg{
+    padding-top: 50px;
+}
+.aboutImg img{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+.aboutDesc{
+    width: 400px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    padding-top: 40px;
+    left: 0;
+    line-height: 1.5;
+}
+.aboutDesc :first-child{
+    color: #a3a3a3;
+}
+.aboutDesc button{
+    width: 60px;
+    background-color: black;
+    border: 1px solid white;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+#desc{
+    padding: 10px 0px;
+}
+#aboutFooter{
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    padding: 20px 40px ;
+    background-color: black;
+    bottom: 3%;
+}
+#aboutFooter p{
+    color: #a3a3a3;
+}
+#footer{
+    margin-top: 100px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footerBox{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.left{
+    font-size: 15px;
 }
