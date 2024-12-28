@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+
+    <!-- Sets the viewport to ensure proper rendering on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document title -->
     <title>Modern web dev</title>
+
+    <!-- Link to external CSS file for custom styling -->
     <link rel="stylesheet" href="loco.css">
+
+    <!-- Link to Remix Icon library for icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Link to additional stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- wasnt able to add locomotive effect -->
 <body>
+    <!-- Decorative circle element -->
     <div id="miniCircle"></div>
+
+    <!-- Main content container -->
     <div id="main">
+
+        <!-- Hero section containing navigation and primary heading -->
         <div id="hero_section">
+
+            <!-- Navigation bar -->
             <div id="nav">
-                <a href="#">Tommy Richlook</a>
-                <h4>Menu+</h4>
+                <a href="#">Tommy Richlook</a> <!-- Placeholder link for the logo or brand name -->
+                <h4>Menu+</h4> <!-- Placeholder for a menu toggle or additional navigation -->
             </div>
+
+            <!-- Hero heading section -->
             <div id="heading">
                 <div class="bounding">
-                    <h1 id="product" class="boundingElem">PRODUCT</h1>
+                    <!-- Primary product description -->
+                    <h1 id="product" class="boundingElem">SOFTWARE</h1>
                 </div>
                 <div id="designer_section">
                     <div class="bounding">
-                        <h1 id="designer" class="boundingElem">DESIGNER</h2>
+                        <!-- Professional title -->
+                        <h1 id="designer" class="boundingElem">ENGINEER</h1>
                     </div>
                     <div class="bounding">
-                        <p id="based" class="boundingElem">BASED IN TORONTO</p>
+                        <!-- Location description -->
+                        <p id="based" class="boundingElem">BASED IN DELHI</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Availability and work timeline -->
             <div id="availability">
                 <div class="bounding">
                     <p class="boundingElem">Available for Full Time & Freelance</p>
@@ -37,75 +61,92 @@
                 <div class="bounding">
                     <p class="boundingElem">work from Jan ‘25</p>
                 </div>
-                
-                
             </div>
+
+            <!-- Footer section in the hero area -->
             <div id="heroFooter">
-                <a href="#">previously worked at Google <i class="ri-arrow-right-up-line"></i></a>
-                <a href="#">protopie ambassaador <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#" class="lineDeco">previously worked at Google <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#" class="lineDeco">protopie ambassador <i class="ri-arrow-right-up-line"></i></a>
                 <div id="upDown">
+                    <!-- Navigation arrows -->
                     <div class="circle"><i class="ri-arrow-up-line"></i></div>
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
                 </div>
             </div>
         </div>
 
+        <!-- Portfolio/work experience section -->
         <div id="second">
+            <!-- Work item -->
             <div class="elem">
-                <img src="lucid-motors.webp" alt="." class="workImg">
-                <h1>lucid motors</h1>
+                <img src="lucid-motors.webp" alt="Lucid Motors logo" class="workImg">
+                <h1>Lucid Motors</h1>
                 <h5>2024</h5>
             </div>
             <div class="elem">
-                <img src="baron-capital.webp" alt="." class="workImg">
+                <img src="baron-capital.webp" alt="Baron Capital logo" class="workImg">
                 <h1>Baron Capital</h1>
                 <h5>2024</h5>
             </div>
             <div class="elem eleLast">
-                <img src="nfl.webp" alt="" class="workImg">
-                <h1>nfl</h1>
+                <img src="nfl.webp" alt="NFL logo" class="workImg">
+                <h1>NFL</h1>
                 <h5>2023</h5>
             </div>
         </div>
 
+        <!-- About section -->
         <div class="about">
             <div class="aboutImg">
-                <img src="about.jpeg" alt=".">
+                <img src="about.jpeg" alt="About Me">
             </div>
             <div class="aboutDesc">
                 <p>(About Me)</p>
-                <p id="desc"> I'm a product and motion designer who loves creating things that are not just eye candy
+                <p id="desc">
+                    I'm a product and motion designer who loves creating things that are not just eye candy
                     but also fix life's little hiccups. When I'm not glued to my computer like a robot or scribbling on
                     my iPad, you might catch me leveling up in video games, snapping photos like a wannabe pro, or
                     watching football because football is life. My design philosophy? Keep it snazzy, make it work, and
                     sprinkle in a bit of fun. I'm the designer you want on your team if you want people to exclaim, "I
-                    need that in my life!".</p>
-                <button>Lets talk!</button>
+                    need that in my life!".
+                </p>
+                <!-- Button to initiate contact -->
+                <button>Let's talk!</button>
             </div>
         </div>
 
+        <!-- About section footer -->
         <div id="aboutFooter">
-            <p>oops, almost forgot...</p>
-            <a href="#">Subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i></a>
+            <p>Oops, almost forgot...</p>
+            <a href="#">Subscribe to my YouTube channel <i class="ri-arrow-right-up-line"></i></a>
         </div>
 
+        <!-- Footer section -->
         <div id="footer">
             <div class="footerBox left">
+                <!-- Copyright and time information -->
                 <p>&copy;2024</p>
                 <p id="time">9:00 AM IST</p>
             </div>
             <div class="footerBox">
-                <a href="#">linkedin</a>
-                <a href="#">x/twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">youtube</a>
+                <!-- Social media links -->
+                <a href="#" class="lineDeco">LinkedIn</a>
+                <a href="#" class="lineDeco">X/Twitter</a>
+                <a href="#" class="lineDeco">Instagram</a>
+                <a href="#" class="lineDeco">YouTube</a>
             </div>
         </div>
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" 
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Locomotive Scroll library -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- Link to custom JavaScript file -->
     <script src="script.js"></script>
 </body>
-
 </html>

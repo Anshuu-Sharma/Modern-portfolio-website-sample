@@ -1,14 +1,19 @@
+/* General Reset */
 *{
     margin: 0;
     padding: 0;
     font-family: "General Sans";
     box-sizing: border-box;
-    color: white;
+    color: white; /* Default text color */
 }
+
+/* Full-page setup */
 html, body{
     width: 100%;
     height: 100%;
 }
+
+/* Mini Circle Animation */
 #miniCircle{
     width: 10px;
     height: 10px;
@@ -18,37 +23,51 @@ html, body{
     z-index: 999999;
     background-color: white;
 }
+
+/* Bounding container for text animations */
 .bounding{
     width: fit-content;
     overflow: hidden;
-    .boundingElem{
-        transform: translateY(100%);
-    }
 }
+
+/* Style for animated elements within .bounding */
+.boundingElem{
+    transform: translateY(100%);
+}
+
+/* Main container */
 #main{
     width: 100%;
     background-color: black;
 }
+
+/* Hero section layout */
 #hero_section{
     width: 100%;
     height: 100vh;
     position: relative;
 }
+
+/* Navigation bar styles */
 #nav{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-#nav a,h4{
+
+#nav a, h4{
     color: white;
     text-decoration: none;
     font-size: large;
 }
+
+/* Main heading section */
 #heading{
     margin: 48px;
 }
 
+/* Designer section alignment */
 #designer_section{
     margin-left: 11%;
     width: fit-content;
@@ -57,20 +76,24 @@ html, body{
     flex-direction: column;
     align-items: end;
 }
+
+/* Product and designer title styles */
 #product, #designer{
     line-height: 0.9;
     font-size: 10vw;
     color: #a3a3a3;
     font-weight: 550;
-    /* opacity: 1; */
 }
+
 #designer{
     text-align: center;
 }
+
 #based{
-    /* text-align: right; */
     font-size: 1vw;
 }
+
+/* Availability section alignment and text styles */
 #availability{
     text-align: right;
     text-transform: uppercase;
@@ -82,32 +105,47 @@ html, body{
     flex-direction: column;
     align-items: end;
 }
+
 p{
     font-weight: 900;
 }
+
+/* Footer styles in hero section */
 #heroFooter{
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 16px;
     width: 100%;
-    padding: 20px 40px ;
+    padding: 20px 40px;
     position: absolute;
     bottom: 3%;
 }
+
+/* Hover effect for links */
 a{
     text-decoration: none;
 }
+
+.lineDeco:hover{
+    text-decoration: underline;
+    transition: all ease-in 1s;
+}
+
+/* Scroll buttons styling */
 #upDown{
     display: flex;
     gap: .2rem;
 }
+
 .circle :first-child{
     color: black;
     background-color: #a3a3a3;
     border-radius: 20px;
     padding: 5px;
 }
+
+/* Second section containing work experience */
 #second{
     background-color: black;
     width: 100%;
@@ -115,6 +153,8 @@ a{
     padding-right: 10vw;
     padding-left: 2vw;
 }
+
+/* Individual work element styles */
 .elem{
     width: 100%;
     border-top: 1px solid #a3a3a3;
@@ -127,15 +167,28 @@ a{
     text-transform: uppercase;
     position: relative;
 }
+
 .elem h1{
     color: #a3a3a3;
 }
+
+/* Hover effect for work element titles */
+.elem:hover h1{
+    color: #787777;
+    padding-left: 2vw;
+    transition: all ease-in-out .5s;
+}
+
 .elem h5{
     font-size: 15px;
 }
+
+/* Last element with bottom border */
 .eleLast{
     border-bottom: 1px solid #a3a3a3;
 }
+
+/* Image styles for work items */
 .workImg{
     opacity: 0;
     position: absolute;
@@ -143,6 +196,8 @@ a{
     z-index: 999;
     border-radius: 25px;
 }
+
+/* About section layout */
 .about{
     width: 90%;
     padding: 350px;
@@ -154,29 +209,34 @@ a{
     padding-left: 2vw;
     gap: 5rem;
 }
+
+/* Image within the about section */
 .aboutImg{
     padding-top: 50px;
 }
+
 .aboutImg img{
     width: 300px;
     height: 300px;
     border-radius: 200px;
 }
+
+/* About description styles */
 .aboutDesc{
     width: 400px;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     text-align: left;
     padding-top: 40px;
-    left: 0;
     line-height: 1.5;
 }
+
 .aboutDesc :first-child{
     color: #a3a3a3;
 }
+
+/* Button within about description */
 .aboutDesc button{
-    width: 60px;
     background-color: black;
     border: 1px solid white;
     text-align: center;
@@ -184,20 +244,26 @@ a{
     height: 40px;
     border-radius: 10px;
 }
+
+/* Padding for the main description text */
 #desc{
     padding: 10px 0px;
 }
+
+/* Footer section for about */
 #aboutFooter{
     text-transform: uppercase;
     font-size: 15px;
     width: 100%;
-    padding: 20px 40px ;
+    padding: 20px 40px;
     background-color: black;
-    bottom: 3%;
 }
+
 #aboutFooter p{
     color: #a3a3a3;
 }
+
+/* Main footer styles */
 #footer{
     margin-top: 100px;
     padding: 0px 40px;
@@ -205,6 +271,7 @@ a{
     justify-content: space-between;
     padding-bottom: 20px;
 }
+
 .footerBox{
     width: fit-content;
     display: flex;
@@ -213,6 +280,8 @@ a{
     font-size: 18px;
     text-transform: uppercase;
 }
+
+/* Left footer box for copyright and time */
 .left{
     font-size: 15px;
 }
