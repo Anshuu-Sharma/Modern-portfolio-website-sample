@@ -11,16 +11,25 @@ html, body{
     height: 100%;
     background-color: black;
 }
+#miniCircle{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .4s; 
+    position: absolute;
+    z-index: 99999;
+    background-color: white;
+}
 #main{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
 }
 #nav{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-
 }
 #nav a,h4{
     color: white;
@@ -30,10 +39,21 @@ html, body{
 #heading{
     margin: 48px;
 }
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    .boundingElem{
+        transform: translateY(100%);
+    }
+}
 #designer_section{
     margin-left: 11%;
     width: fit-content;
     line-height: 2.6;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 #product, #designer{
     line-height: 0.9;
@@ -46,7 +66,7 @@ html, body{
     text-align: center;
 }
 #based{
-    text-align: right;
+    /* text-align: right; */
     font-size: 1vw;
 }
 #availability{
@@ -56,6 +76,9 @@ html, body{
     padding-top: 120px;
     font-size: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 p{
     font-weight: 900;
